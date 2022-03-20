@@ -1,0 +1,30 @@
+package lekcia5;
+
+public class operators {
+    public static void main(String[] args ){
+        // задача 1
+        double x = 3;
+        double y = 3;
+        short x1 = 2;
+        short y1 = 2;
+
+        System.out.println(Math.sqrt(Math.pow(y, y1)+Math.pow(x, x1)));
+
+        //зад2
+        int month = 3,day = 10;
+        boolean pMonth =(month == 3 && day >=20 || month == 6 && day <=20 || month > 3 && month < 6 && day >=1 &&
+        day<=31 ? true :false);
+        String pMoonth =(month == 3 && day >=20 || month == 6 && day <=20 || month > 3 && month < 6 && day >=1 &&
+                day<=31 ? "yes" :"false-no");
+        System.out.println(pMonth);
+        System.out.println(pMoonth);
+
+        //задача 3
+        int kg = 88;
+        float h = 1.86f;
+        short h1 = 2;
+        double bmi = kg/(Math.pow(h, h1));
+        System.out.println(bmi);
+        String mbmi;
+        mbmi = (bmi<16 || bmi >= 18.5 && bmi<= 24.99 ||bmi<= 24.99 && bmi >= 25 ? "В НОРМА СИ ":"НЕ СИ В НОРМА");
+        System.out.println(mbmi);
